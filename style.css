@@ -222,5 +222,52 @@ align-items: center;
 }
 
 
+/* Portfolyo */
+
+
+.portfolyo{
+display: flex;
+flex-wrap: wrap;
+/* Flex yapısı wrap olacak şekilde verıldı */
+}
+.portfolyo-item{
+    /* Her bir görsel sayfanın 100de 25ini kapladı bu sayede 100de 100ü için dort gorsel sığdırdı
+    overflow hidden ile taşma engellendı. */
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.portfolyo-item img{
+    /* imgye bulundugun alanın 100de 100unu kapla ve cover(obje alana tam otursun)dedik */
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: 0.5s;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    /* icon arka plan rengı duzeltıldı */
+    background-color: #4e3d25;
+    /* absolute yapıldıkı ıcon konumunu degıtırebılelım ana contaınerda relative yapıldı */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.portfolyo-item:hover .overlay{
+    top:0;
+}
+.portfolyo-item:hover img{
+    transform: scale(1.1);
+    /* Görsel büyütüldü */
+}
 
 
