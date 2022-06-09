@@ -269,4 +269,23 @@ transition: 0.5s;
     /* Görsel büyütüldü */
 }
 
+/* Contact Us */
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.content-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
 
+}
+.content-item i{
+    font-size: 25px;
+    color: #4e3d25;
+    margin-bottom: 30px;
+}
