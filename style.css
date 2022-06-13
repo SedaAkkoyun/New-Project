@@ -412,5 +412,14 @@ color: white;
      .about-text{
          width: 100%;
      }
+
+     .portfolyo .portfolyo-item{
+         flex-basis: 50%;
+         /* her satıra 2şer resim sığdı */
+     }
 }
+@media only screen and (max-width:500px){
+  .portfolyo .portfolyo-item{  flex-basis: 100%;
+}}
+
 
