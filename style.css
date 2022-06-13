@@ -357,6 +357,7 @@ display: block;
 .footer-content{
     
     display: flex;
+  
     flex-direction: column;
     align-items: center;
 
@@ -433,5 +434,12 @@ color: white;
 @media only screen and (max-width:500px){
   .portfolyo .portfolyo-item{  flex-basis: 100%;
 }}
+@media only screen and (max-width:500px){
+    /* İphone Se'de iconlar aşağı kayıyordu */
+    .footer-icon i{
+margin-left: 20px;
+
+}
+}
 
 
